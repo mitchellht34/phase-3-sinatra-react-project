@@ -10,13 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_10_220821) do
-
-  create_table "comics", force: :cascade do |t|
-    t.string "title"
-    t.string "publisher"
-    t.float "price"
-    t.text "synopsis"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
