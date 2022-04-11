@@ -105,7 +105,7 @@ invincible = ComicBook.create(
 )
 
 
-knight.characters << batman << joker << alfred << diana << lex << dick
+knight.characters << batman << joker << alfred << diana << lex
 teen.characters << dick << cyborg << gar << wally << raven << kori << donna
 thor1.characters << thor << odin << freyja << jane << heimdall << loki
 thor2.characters << thor << galactus << odin << freyja << jane << heimdall << loki

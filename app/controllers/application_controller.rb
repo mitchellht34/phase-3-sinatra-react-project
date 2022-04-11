@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
   # Add your routes here
   get "/" do
     comics = ComicBook.all
-    comics.to_json
+    comics.to_json(include: [:characters])
   end
 
 end
