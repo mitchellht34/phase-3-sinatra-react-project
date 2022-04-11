@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    comics = Comic.all
+    comics = ComicBook.all
     comics.to_json
   end
 
