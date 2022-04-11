@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2022_04_11_044403) do
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.string "alter_ego"
-    t.string "description"
-    t.integer "created"
+    t.text "description"
+    t.string "powers"
   end
 
   create_table "comics", force: :cascade do |t|
