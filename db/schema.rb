@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_04_11_000214) do
     t.integer "number_of_issues"
   end
 
-  create_table "comic_issues", force: :cascade do |t|
+  create_table "issues", force: :cascade do |t|
     t.integer "issue_number"
     t.string "writer"
   end
