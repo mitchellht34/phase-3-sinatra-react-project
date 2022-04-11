@@ -1,3 +1,3 @@
 class Character < ActiveRecord::Base
-    belongs_to :issue
+    belongs_to :comic_book
 end
