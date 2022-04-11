@@ -14,7 +14,7 @@ class ComicsController < ApplicationController
         end
     end
 
-    post "/comics do" do
+    post "/comics" do
         comic = Comic.create(
             title: params[:title],
             publisher: params[:publisher],
@@ -36,7 +36,7 @@ class ComicsController < ApplicationController
         comic = Comic.find_by(id: params[:id])
         if comic
             comic.destroy
-            "Successfully Deleted Comic"
+            "Successfully Deleted #{comic.title} Comic"
         else
             {error: "Comic does not exist"}.to_json
         end
