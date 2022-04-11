@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2022_04_11_000214) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
+    t.integer "comic_book_id"
   end
 
   create_table "comic_books", force: :cascade do |t|
