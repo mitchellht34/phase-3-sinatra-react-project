@@ -55,6 +55,15 @@ ComicBook.create(
     )
 
 ComicBook.create(
+    title: "Teenage Mutant Ninja Turtles: The Last Ronin",
+    publisher: "IDW Publishing",
+    synopsis: "It's the TMNT event of 2020! Springing from the minds of TMNT co-creators Kevin Eastman and Peter Laird comes an epic like you've never seen before! In a future NYC far different than the one we know today, a lone surviving Turtle goes on a seemingly hopeless mission to obtain justice for his fallen family and friends. Kinetic layouts from Eastman, moody inks from Andy Kuhn and a thrilling script full of surprises from longtime TMNT scribe Tom Waltz all combine to make this one of the most memorable TMNT stories you will ever read!",
+    release_date: 2020,
+    number_of_issues: 5,
+    writer: "Peter Laird"
+)
+
+ComicBook.create(
     title: "Invincible",
     publisher: "Image Comics",
     synopsis: "Mark Grayson is the teenage superhero known as Invincible. He was a normal high school senior with a normal part-time job and otherwise normal life, except for the fact that his father Nolan is the superhero Omni-Man, the most powerful superhero on the planet.",
@@ -63,9 +72,37 @@ ComicBook.create(
     writer: "Robert Kirkman"
 )
 
-Issue.create(
-
-)
+Character.create(name: "Batman")
+Character.create(name: "Joker")
+Character.create(name: "Alfred Pennyworth")
+Character.create(name: "Wonder Woman")
+Character.create(name: "Lex Luthor")
+Character.create(name: "Nightwing")
+Character.create(name: "Cyborg")
+Character.create(name: "Beast Boy")
+Character.create(name: "Kid Flash")
+Character.create(name: "Raven")
+Character.create(name: "Starfire")
+Character.create(name: "Wonder Girl")
+Character.create(name: "Thor")
+Character.create(name: "Odin")
+Character.create(name: "Freyja")
+Character.create(name: "Jane Foster")
+Character.create(name: "Heimdall")
+Character.create(name: "Loki")
+Character.create(name: "Galactus")
+Character.create(name: "Pearl Jones")
+Character.create(name: "Skinner Sweet")
+Character.create(name: "Berzerker")
+Character.create(name: "Invincible")
+Character.create(name: "Omni-Man")
+Character.create(name: "Michelangelo")
+Character.create(name: "Raphael")
+Character.create(name: "Donatello")
+Character.create(name: "Leonardo")
+Character.create(name: "April O'Neil")
+Character.create(name: "Casey Marie Jones")
+Character.create(name: "Karai")
 
 
 puts "✅ Done seeding!"
