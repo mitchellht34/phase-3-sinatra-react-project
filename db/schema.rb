@@ -22,11 +22,13 @@ ActiveRecord::Schema.define(version: 2022_04_11_000214) do
     t.text "synopsis"
     t.integer "release_date"
     t.integer "number_of_issues"
+    t.string "writer"
   end
 
   create_table "issues", force: :cascade do |t|
+    t.integer "title"
     t.integer "issue_number"
-    t.string "writer"
+    t.float "price"
   end
 
 end
