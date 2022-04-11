@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_04_11_000214) do
   end
 
   create_table "comic_books", force: :cascade do |t|
-    t.string "series_title"
+    t.string "title"
     t.string "publisher"
     t.text "synopsis"
     t.integer "release_date"
