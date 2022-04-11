@@ -6,5 +6,10 @@ class ApplicationController < Sinatra::Base
     comics = Comic.all
     comics.to_json
   end
+  
+  get "/characters" do
+    characters = Character.all
+    characters.to_json
+  end
 
 end
