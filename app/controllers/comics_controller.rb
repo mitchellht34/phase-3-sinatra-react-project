@@ -6,7 +6,7 @@ class ComicsController < ApplicationController
     end
 
     get "/comics/:id" do
-        comic = Comic.find(params[:id])
+        comic = Comic.find_by(id: params[:id])
         if comic
             comic.to_json
         else
@@ -33,7 +33,7 @@ class ComicsController < ApplicationController
     end
 
     delete "/comics/:id" do
-        comic = Comic.find(params[:id])
+        comic = Comic.find_by(id: params[:id])
         if comic
             comic.destroy
             "Successfully Deleted Comic"
