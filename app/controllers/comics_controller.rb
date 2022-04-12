@@ -36,7 +36,7 @@ class ComicsController < ApplicationController
         comic = Comic.find_by(id: params[:id])
         if comic
             comic.destroy
-            "Successfully Deleted #{comic.title} Comic"
+            comic.to_json
         else
             {error: "Comic does not exist"}.to_json
         end

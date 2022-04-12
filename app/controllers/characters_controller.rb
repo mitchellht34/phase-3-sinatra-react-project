@@ -15,6 +15,15 @@ class CharactersController < ApplicationController
         end
     end
 
+    get "/characters/:id/comics" do
+        character = Character.find_by(id: params[:id])
+        if character
+            character.comics.to_json
+        else
+            {error: "Character does not exist"}.to_json
+        end
+    end
+
     post "/characters" do
         character = Character.create(
             name: params[:name],
@@ -33,7 +42,7 @@ class CharactersController < ApplicationController
         character = Character.find_by(id: params[:id])
         if character
             character.destroy
-            "Successfully Deleted #{character.name} Character"
+            character.to_json
         else
             {error: "Character does not exist"}.to_json
         end
